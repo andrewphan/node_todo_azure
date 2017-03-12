@@ -2,7 +2,7 @@
 # golang:onbuild automatically copies the package source, 
 # fetches the application dependencies, builds the program, 
 # and configures it to run on startup 
-FROM andrewphan/alpine-node
+FROM mhart/alpine-node
 COPY package.json /tmp/package.json
 RUN cd /tmp && npm install --production
 RUN mkdir -p /usr/src/app && mv /tmp/node_modules /usr/src
