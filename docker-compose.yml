@@ -2,8 +2,8 @@
 version: '2'
 
 services:
-  node-todo:
-    image: node-todo:latest
+  node_todo_azure:
+    image: node_todo_azure:latest
     build:
       context: .
       dockerfile: Dockerfile

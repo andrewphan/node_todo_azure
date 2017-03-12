@@ -13,7 +13,7 @@ CMD node server.js
 
 # For more control, you can copy and build manually
 # FROM golang:latest 
-# LABEL Name=node-todo Version=0.0.1 
+# LABEL Name=node_todo_azure Version=0.0.1 
 # RUN mkdir /app 
 # ADD . /app/ 
 # WORKDIR /app 
