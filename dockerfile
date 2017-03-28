@@ -1,5 +1,4 @@
 
-
 FROM mhart/alpine-node
 LABEL Name=node_todo_azure Version=0.0.1 
 COPY package.json /tmp/package.json

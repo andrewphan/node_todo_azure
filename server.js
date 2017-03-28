@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 // configuration ===============================================================
-mongoose.connect(process.env.MONGODB || database.localUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
+mongoose.connect(process.env.MONGODB || database.remoteUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
 
 mongoose.connection.on('error', console.error.bind('connection error!'));
 

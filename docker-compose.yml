@@ -6,7 +6,7 @@ services:
     image: node_todo_azure:latest
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfile
     environment:
       NODE_ENV: production
     ports:
